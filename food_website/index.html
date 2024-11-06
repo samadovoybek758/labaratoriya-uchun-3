@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
         <title>OMNIFOOD</title>
-        <script src="https://kit.fontawesome.com/def4642f0d.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/def4642f0d.js" crossorigin="anonymous" defer></script>
     </head>
     <body>
         <header>
@@ -20,10 +20,10 @@
                 <div class="row">
                     <img src="RESOURCES/IMG/logo-white.png" alt="omnifood logo" class="logo">
                     <ul class="main-nav">
-                        <li><a href="#features">Food Delivery</a></li>
-                        <li><a href="#work">How it works</a></li>
-                        <li><a href="#cities">Our cities</a></li>
-                        <li><a href="#plans">Sign Up</a></li>
+                        <li><a href="#features" aria-label="food">Food Delivery</a></li>
+                        <li><a href="#work" aria-label="works">How it works</a></li>
+                        <li><a href="#cities" aria-label="our city">Our cities</a></li>
+                        <li><a href="#plans" aria-label="sign up">Sign Up</a></li>
                     </ul>
                 </div>
             </nav>
@@ -328,7 +328,7 @@
                             <label for="name">Name</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required aria-label="Enter your full name">
                         </div>
                     </div>
                     <div class="row">
@@ -336,7 +336,7 @@
                             <label for="email">Email</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required aria-label="Enter your email">
                         </div>
                     </div>
                     <div class="row">
@@ -344,7 +344,7 @@
                             <label for="find-us">How did you find us?</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <select name="find-us" id="find-us">
+                            <select name="find-us" id="find-us" aria-label="choosing ">
                                 <option value="friends" selected>Friends</option>
                                 <option value="internet">Internet</option>
                                 <option value="advertisement">Advertisement</option>
